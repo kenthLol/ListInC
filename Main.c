@@ -179,7 +179,7 @@ void ListAdd(ListPointer list_pointer, int32_t value)
         int32_t new_capacity = (list_pointer->Capacity) * 2;
         int32_t *aux = NULL;
 
-        aux = (int32_t*)malloc(list_pointer->Capacity * sizeof(int32_t));
+        aux = (int32_t*)malloc(new_capacity * sizeof(int32_t));
 
         for (size_t i = 0; i < list_pointer->Size; ++i)
         {
